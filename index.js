@@ -14,6 +14,7 @@ app.post("/incoming", (req, res) => {
   // You can use `messageBody` to decide how to respond
 
   // Respond to the incoming message
+  console.log("ytoe");
   twiml.message("Thank you for your message!");
 
   res.writeHead(200, { "Content-Type": "text/xml" });
