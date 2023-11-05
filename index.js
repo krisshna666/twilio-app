@@ -4,7 +4,7 @@ const { MessagingResponse } = require("twilio").twiml;
 const app = express();
 const port = process.env.PORT || 3000;
 console.log("file initialized");
-app.post("https://new-twilio.onrender.com/incoming", (req, res) => {
+app.post("/incoming", (req, res) => {
   const twiml = new MessagingResponse();
 
   // Access the incoming message body
